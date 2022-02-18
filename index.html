@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rest Country API</title>
+  </head>
+  <body class="light-theme">
+    <nav>
+      <div class="nav-bar container">
+        <h1>Where in the world?</h1>
+        <div class="theme">
+          <div><i class="far fa-moon"></i></div>
+          <div class="mode">Dark Mode</div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="loader"></div>
+      <div class="container" id="home_page">
+        <div class="search-filter-bar">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for a country.." />
+          </div>
+          <div class="filter-bar">
+            <div class="dropdown-bar">
+              <p class="dropdown-text">Filter by countries</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <ul class="dropdown-list">
+              <li class="region">Africa</li>
+              <li class="region">Americas</li>
+              <li class="region">Asia</li>
+              <li class="region">Europe</li>
+              <li class="region">Oceania</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flag-container"></div>
+      </div>
+      <div class="container" id="details_page"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
